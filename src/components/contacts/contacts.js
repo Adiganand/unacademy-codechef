@@ -20,7 +20,7 @@ const Contacts = () => {
   };
   useEffect(() => {
     fetchContactList();
-  }, []);
+  });
 
   const likeContact = (id) => {
     const newList = [
