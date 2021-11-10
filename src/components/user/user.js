@@ -60,6 +60,7 @@ const User = ({
           <div className='row d-flex justify-content-around'>
             <div className='col-auto'>
               <button
+                aria-label={`liked-${id}`}
                 onClick={() => likeContact(id)}
                 style={{ background: "none", border: "none" }}
               >
@@ -68,6 +69,7 @@ const User = ({
             </div>
             <div className='col-auto'>
               <button
+                aria-label={`edit-${id}`}
                 style={{ background: "none", border: "none" }}
                 data-bs-toggle='modal'
                 data-bs-target={`#modal-${id}`}
@@ -78,6 +80,7 @@ const User = ({
             </div>
             <div className='col-auto'>
               <button
+                aria-label={`delete-${id}`}
                 style={{ background: "none", border: "none" }}
                 onClick={() => deleteContact(id)}
               >
